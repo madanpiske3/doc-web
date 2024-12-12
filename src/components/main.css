@@ -1,0 +1,21 @@
+div.text-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* div.text-block.even div.image {
+  order: 3;
+} */
+
+div.text-block:nth-child(even) div.image {
+  order: 3;
+}
+
+@media screen and (max-width: 768px) {
+  div.text-block {
+    grid-template-columns: 1fr;
+  }
+  div.text-block:nth-child(even) div.image {
+    order: 0;
+  }
+}

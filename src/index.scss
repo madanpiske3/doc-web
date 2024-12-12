@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+.section-about {
+    @apply px-16 py-6 lg:py-16 lg:px-32;
+  }
+  
+  .about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    @apply flex flex-col items-center gap-8;
+  }
+  
+  .about-row {
+    @apply flex flex-col lg:flex-row items-center gap-8;
+    font-weight: 500;
+  }
+  
+  .about-row figure {
+    @apply w-full order-2 lg:order-none;
+  }
+  
+  .about-row figure img {
+    @apply object-cover lg:ml-[-2rem];
+  }
+  
+  .about-content {
+    @apply order-1 lg:order-none flex flex-col gap-4 mb-16 ml-8;
+  }
+  
+  .about-content h3 {
+    @apply text-2xl font-bold;
+  }
+  
+  .about-content p {
+    @apply text-lg text-[rgba(40,40,40,0.7)];
+  }
+
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
